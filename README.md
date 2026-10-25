@@ -2,8 +2,9 @@
 
 Site institucional estático. Os arquivos `index.html`, `styles.css`, `script.js` e `logo.png` ficam na raiz do projeto.
 
-## Publicação no GitHub Pages
+## Publicação na Vercel
 
-O workflow em `.github/workflows/pages.yml` publica o site automaticamente quando há um push para a branch `main`.
-
-Na primeira publicação, configure o repositório em **Settings → Pages → Build and deployment → Source → GitHub Actions**. Depois, acompanhe a implantação na aba **Actions**; o endereço publicado aparece no ambiente `github-pages`.
+1. Importe o repositório do GitHub na Vercel e selecione a pasta raiz do projeto.
+2. Escolha **Other** como framework preset.
+3. Deixe o comando de build e o comando de instalação vazios; não há etapa de compilação.
+4. Publique. A Vercel disponibiliza uma URL e publica automaticamente novos pushes para a branch de produção.
